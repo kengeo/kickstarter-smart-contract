@@ -1,0 +1,11 @@
+{
+  "name": "kickstarter-smart-contarct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Li <ml@maxlivinci.com> (https://maxlivinci.com/)",
+  "license": "MIT"
+}
