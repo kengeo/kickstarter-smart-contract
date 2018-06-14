@@ -27,4 +27,15 @@ contract Campaign {
         require(msg.value > minimumContribution);
         approvers.push(msg.sender);
     }
+
+    function createRequest(string description, uint value, address recipient) public restricted {
+        Request newRequest = Request({
+           description: description,
+           value: value,
+           recipient: recipient,
+           complete: false
+        });
+
+        requests.push(newRequest);
+    }
 }
