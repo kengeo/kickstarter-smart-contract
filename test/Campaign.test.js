@@ -60,4 +60,16 @@ describe('Inbox', async () => {
       expect(err).toBeDefined();
     }
   });
+
+  it('allows a manager to make a payment request', async () => {
+    await campaign.methods
+      .createRequest('Buy batteries', '100', accounts[1])
+      .send({
+        from: accounts[0],
+        gas: '1000000'
+      });
+    const request = await campaign.methods.requests(0).call();
+
+    expect(request.description).toEqual('Buy batteries')
+  });
 });
