@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "node ./ethereum/compile.js",
-    "test": "jest --watchAll",
-    "deploy": "node ./deploy.js"
+    "deploy": "node ./ethereum/deploy.js",
+    "test": "jest --watchAll"
   },
   "jest": {
     "testEnvironment": "node"
@@ -18,6 +18,7 @@
     "ganache-cli": "^6.1.3",
     "jest": "^23.1.0",
     "solc": "^0.4.24",
+    "truffle-hdwallet-provider": "0.0.5",
     "web3": "^1.0.0-beta.26"
   }
 }
