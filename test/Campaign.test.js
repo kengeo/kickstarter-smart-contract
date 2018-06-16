@@ -38,7 +38,7 @@ describe('Inbox', async () => {
 
   it('marks caller as the campaign manager', async () => {
     const manager = await campaign.methods.manager().call();
-    expect(accounts[0]).toEuqal(manager)
+    expect(accounts[0]).toEqual(manager)
   });
 
   it('allows people to contribute money and marks them as approvers', async () => {
@@ -48,5 +48,16 @@ describe('Inbox', async () => {
     });
     const isContributor = await campaign.methods.approvers(accounts[1]).call();
     expect(isContributor).toBeTruthy()
+  });
+
+  it('requires a minimum contribution', async () => {
+    try {
+      await campaign.methods.contribute().send({
+        value: '5',
+        from: accounts[1]
+      });
+    } catch (err) {
+      expect(err).toBeDefined();
+    }
   });
 });
