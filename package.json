@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "node ./ethereum/compile.js",
-    "deploy": "node ./ethereum/deploy.js",
+    "deploy-contract": "node ./ethereum/deploy.js",
+    "deploy-heroku": "heroku container:push web --app kickstarter-smart-contarct",
     "test": "jest --watchAll",
     "dev": "node ./server.js",
     "build": "next build",
