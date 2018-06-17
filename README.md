@@ -3,6 +3,10 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Create campaigns on top of blockchain!
+
+![demo](https://user-images.githubusercontent.com/11765228/41504069-9a06c7e8-7216-11e8-9206-44482d255def.png)
+
 ## Getting Started
 
 ### Prerequisites
