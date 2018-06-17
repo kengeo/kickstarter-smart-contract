@@ -70,6 +70,12 @@ Build the image and push to Container Registry:
 heroku container:push web --app {app_name}
 ```
 
+Then release the image to your app:
+
+```
+heroku container:release web --app {app_name}
+```
+
 Now open the app in your browser:
 
 ```

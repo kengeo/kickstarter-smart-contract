@@ -7,6 +7,7 @@
     "compile": "node ./ethereum/compile.js",
     "deploy-contract": "node ./ethereum/deploy.js",
     "deploy-heroku": "heroku container:push web --app kickstarter-smart-contarct",
+    "release": "heroku container:release web --app kickstarter-smart-contarct",
     "test": "NODE_ENV=test jest --watchAll",
     "dev": "NODE_ENV=development node index.js",
     "build": "next build",
