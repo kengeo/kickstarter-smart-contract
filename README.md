@@ -20,17 +20,19 @@ $ node -v
 v8.9.1
 ```
 
-### Installing
+### Instal Dependencies
 
-Run `npm install` to install all project dependencies.
+```
+npm install
+```
 
-### Start Project
+### Start the Project
 
 ```
 npm run dev
 ```
 
-### Deploy Contract
+### Deploy Contracts
 
 ```
 npm run deploy-contract
@@ -73,10 +75,6 @@ Now open the app in your browser:
 ```
 heroku open --app {app_name}
 ```
-
-## Authors
-
-- Max Li - [LIYINGZHEN](https://github.com/LIYINGZHEN)
 
 ## License
 
