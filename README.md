@@ -24,18 +24,54 @@ v8.9.1
 
 Run `npm install` to install all project dependencies.
 
-### Deploying Project to Ethereum Blockchain
+### Start Project
 
 ```
-npm run deploy
+npm run dev
 ```
 
-### Running Tests
+### Deploy Contract
+
+```
+npm run deploy-contract
+```
+
+### Run Tests
 
 To run the project tests, run the following command:
 
 ```
 npm test
+```
+
+## Deploy dockerized apps on Heroku
+
+You can deploy the project on [Heroku](https://www.heroku.com/) using the following steps:
+
+Make sure you have a working Docker installation (eg. `docker ps`) and that you’re logged in to Heroku (`heroku login`).
+
+Log in to Container Registry:
+
+```
+heroku container:login
+```
+
+Navigate to the app’s directory and create a Heroku app:
+
+```
+heroku create
+```
+
+Build the image and push to Container Registry:
+
+```
+heroku container:push web --app {app_name}
+```
+
+Now open the app in your browser:
+
+```
+heroku open --app {app_name}
 ```
 
 ## Authors
