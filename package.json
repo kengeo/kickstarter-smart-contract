@@ -1,14 +1,14 @@
 {
-  "name": "kickstarter-smart-contarct",
+  "name": "kickstarter-smart-contract",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "compile": "node ./ethereum/compile.js",
     "deploy-contract": "node ./ethereum/deploy.js",
-    "deploy-heroku": "heroku container:push web --app kickstarter-smart-contarct",
-    "release": "heroku container:release web --app kickstarter-smart-contarct",
-    "logs": "heroku logs --app kickstarter-smart-contarct",
+    "deploy-heroku": "heroku container:push web --app kickstarter-smart-contract",
+    "release": "heroku container:release web --app kickstarter-smart-contract",
+    "logs": "heroku logs --app kickstarter-smart-contract",
     "test": "NODE_ENV=test jest --watchAll",
     "dev": "NODE_ENV=development node index.js",
     "build": "next build",
